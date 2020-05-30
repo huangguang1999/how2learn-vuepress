@@ -1,8 +1,8 @@
 <template>
   <div class="customer-component">
-    <div class="left">123</div>
-    <div class="center">123</div>
-    <div class="right">123</div>
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
   </div>
 </template>
 <style lang="stylus">

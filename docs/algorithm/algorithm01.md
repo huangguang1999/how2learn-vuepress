@@ -615,3 +615,138 @@ const isValidBST = function (root) {
 
 ### 将有序数组转换成二叉搜索树
 
+将一个按照升序排列的有序数组，转换成一颗高度平衡二叉搜索树
+
+本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过1
+
+```javascript
+给定有序数组: [-10,-3,0,5,9],
+
+一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：
+
+      0
+     / \
+   -3   9
+   /   /
+ -10  5
+```
+
+#### 递归实现
+
+```javascript
+const sortedArrayToBST = (nums) => {
+    let help = (start, end) => {
+        if (start > end) return null
+        if (start === end) return new TreeNode(nums[start])
+        let mid = Math.floor((start + end) / 2)
+        let node = new TreeNode(nums[mid])
+        node.left = help(start, mid - 1)
+        node.right = help(mid + 1, end)
+        return node
+    }
+    return help(0, nums.length - 1)
+}
+```
+
+### 二叉树展开成链表
+
+给定一个二叉（搜索树），原地将它展开为链表。
+
+例如，给定二叉树
+
+```javascript
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+```
+
+展开为：
+
+```javascript
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+```
+
+#### 递归方式
+
+```javascript
+const flatten = (root) => {
+    if (root == null) return 
+    flatten(root.left)
+    flatten(root.right)
+    if (root.left) {
+        let p = root.left
+        while (p.right) {
+            p = p.right
+        }
+        p.right = root.right
+        root.right = root.left
+        root.left = null
+    }
+}
+```
+
+### 不同的二叉搜索树2
+
+给定一个整数n，生成所有由1~n为节点组成的二叉搜索树
+
+```javascript
+输入: 3
+输出:
+[
+  [1,null,3,2],
+  [3,2,null,1],
+  [3,1,null,null,2],
+  [2,1,3],
+  [1,null,2,null,3]
+]
+解释:
+以上的输出对应以下 5 种不同结构的二叉搜索树：
+
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+```
+
+
+#### 递归解法
+
+```javascript
+const generateTrees = function(n) {
+    let help = (start, end) => {
+        if(start > end) return [null];
+        if(start === end) return [new TreeNode(start)];
+        let res = [];
+        for(let i = start; i <= end; i++) {
+            // 左孩子集
+            let leftNodes = help(start, i - 1);
+            // 右孩子集
+            let rightNodes = help(i + 1, end);
+            for(let j = 0; j < leftNodes.length; j++) {
+                for(let k = 0; k < rightNodes.length; k++) {
+                    let root = new TreeNode(i);
+                    root.left = leftNodes[j];
+                    root.right = rightNodes[k];
+                    res.push(root);
+                }
+            }
+        }
+        return res;
+    }
+    if(n == 0) return [];
+    return help(1, n);
+};
+```
