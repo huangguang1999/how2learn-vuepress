@@ -1,8 +1,8 @@
 module.exports = {
   // 页面标题
-  title: '小黄',
+  title: '光光',
   // 网页描述
-  description: '黄广的个人站点',
+  description: '个人网站',
   head: [
     // 页面icon
     ['link', { rel: 'icon', href: '/icon.png' }]
@@ -34,9 +34,8 @@ module.exports = {
         {
           title: 'vue源码',
           children: [
-            ['source01', 'MVVM响应式原理'],
-            ['first', 'vue的第一个文章'],
-            ['second', 'vue的第二个文章']
+            ['source01', 'MVVM-part1-defineProperty'],
+            ['source02', 'MVVM-part2-Dep']
           ]
         },
         {
