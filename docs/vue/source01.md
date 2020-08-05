@@ -1,4 +1,4 @@
-# VUE-MVVM-part1-defineProperty
+# VUE-part1-defineProperty
 
 首先了解一个Object对象中自带的一个API：`Object.defineProperty()`
 
@@ -8,9 +8,9 @@ PS：需要在Object构造器上调用此方法，而不是在任意一个Object
 
 参数：
 
-`obj` --- 要定义属性的对象
-`prop` --- 要定义或修改的属性的名称或`Symbol`
-`descriptor` --- 要定义或修改的属性描述符
+* `obj` --- 要定义属性的对象
+* `prop` --- 要定义或修改的属性的名称或`Symbol`
+* `descriptor` --- 要定义或修改的属性描述符
 
 返回值：
 
