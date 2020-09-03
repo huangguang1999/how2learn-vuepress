@@ -2,7 +2,7 @@ module.exports = {
   // 页面标题
   title: '光光',
   // 网页描述
-  description: '个人网站',
+  description: '闭上眼睛',
   head: [
     // 页面icon
     ['link', { rel: 'icon', href: '/icon.png' }]
@@ -52,8 +52,7 @@ module.exports = {
         {
           title: '封装vue组件库',
           children: [
-            ['first', 'vue的第一个文章'],
-            ['second', 'vue的第二个文章']
+
           ]
         },
       ],
@@ -111,11 +110,11 @@ module.exports = {
       ],
       '/webgl/': [
         {
-          title: 'openlayers',
+          title: '可视化基础',
           collapsable: false,
           children: [
             "",
-            ['openlayers01', 'openlayers01-原理篇'],
+            ['visualization01', '前端和可视化'],
           ]
         },
       ],
@@ -124,8 +123,38 @@ module.exports = {
           title: 'Chromium',
           collapsable: false,
           children: [
-            "",
             ['source01', 'JS代码执行过程'],
+            ['secure01', 'XSS/CSRF'],
+          ]
+        },
+      ],
+      '/js/': [
+        {
+          title: 'JavaScript',
+          collapsable: false,
+          children: [
+            "",
+            ['js-time01', 'JavaScript异步'],
+          ]
+        },
+      ],
+      '/html/': [
+        {
+          title: 'HTML',
+          collapsable: false,
+          children: [
+            "",
+            ['html01', 'HTML基础'],
+          ]
+        },
+      ],
+      '/css/': [
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: [
+            "",
+            ['css01', 'CSS基础'],
           ]
         },
       ]
@@ -145,8 +174,11 @@ module.exports = {
         text: '其它',
         items: [
           { text: '手写代码', link: '/code/'},
-          { text: 'Chromium', link: '/google/'},
+          { text: '浏览器', link: '/google/'},
           { text: 'WebGL', link: '/webgl/'},
+          { text: 'JavaScript', link: '/js/'},
+          { text: 'HTML', link: '/html/'},
+          { text: 'CSS', link: '/css/'},
         ]
       }
   ]},

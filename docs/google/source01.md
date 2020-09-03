@@ -4,7 +4,7 @@
 
 ## V8执行流程-JIT（Just In Time）技术
 
-![微信截图_20200803170954.png](https://i.loli.net/2020/08/03/vL8fq1YPsISjxAG.png)
+![img](https://static001.geekbang.org/resource/image/8a/54/8a34ae8c1a7a0f87e19b1384a025e354.jpg)
 
 1. 根据高级语言生成AST和作用域
 2. 根据AST和作用域生成字节码
