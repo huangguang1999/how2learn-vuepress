@@ -125,6 +125,7 @@ module.exports = {
           children: [
             ['source01', 'JS代码执行过程'],
             ['secure01', 'XSS/CSRF'],
+            ['sort01', 'V8排序'],
           ]
         },
       ],
@@ -135,6 +136,9 @@ module.exports = {
           children: [
             "",
             ['js-time01', 'JavaScript异步'],
+            ['design01', '设计模式'],
+            ['animation01', '动画'],
+            ['draw01', '绘图'],
           ]
         },
       ],
