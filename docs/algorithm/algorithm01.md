@@ -338,7 +338,7 @@ const isSymmetric = function (root) {
         node1 = queue.shift()
         node2 = queue.shift()
         // 两节点均为空
-        if (!node1 && node2) {
+        if (!node1 && !node2) {
             continue
         }
         // 一个为空一个不为空，或者两个节点值不相等
@@ -348,7 +348,7 @@ const isSymmetric = function (root) {
         queue.push(node1.left)
         queue.push(node2.right)
         queue.push(node1.right)
-        queue.push(ndoe2.left)
+        queue.push(node2.left)
     }
     return true
 }

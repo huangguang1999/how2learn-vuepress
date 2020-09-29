@@ -1,8 +1,11 @@
 # 说明
 
-此仓库用于搭建博客系统
+此仓库用于搭建个人的博客系统，内含大量文章，如需模板，请参考官网和其他示例。
+
+
 
 ## 安装、启动和打包
+
 在使用前请先安装VuePress
 ```sh
 $ npm install -g vuepress
@@ -18,3 +21,15 @@ $ npm run dev
 $ npm run build
 ```
 
+
+
+## 学习途径
+
+这里贴出平时主要的**学习途径**，仅供大家参考：
+
+* 专业书籍：【JavaScript高级程序设计】【你不知道的JavaScript(上中下)】【JavaScript权威指南】
+* [掘金](https://juejin.im/)
+* [极客时间](https://time.geekbang.org/)
+* [谷歌开发者文档](https://developers.google.com/china?hl=zh-cn)
+* 大佬博客（如冴羽、神三元、张鑫旭等）
+* GitHub上项目（扩展技术广度）

@@ -50,6 +50,12 @@ module.exports = {
           ]
         },
         {
+          title: 'vue3',
+          children: [
+            ['vue3-01', 'Vue3之proxy'],
+          ]
+        },
+        {
           title: '封装vue组件库',
           children: [
 
@@ -73,7 +79,11 @@ module.exports = {
           children: [
             "",
             ['dataStru01', '数据结构'],
-            ['algorithm01', '二叉树']
+            ['algorithm01', '二叉树'],
+            ['algorithm02', '链表'],
+            ['algorithm03', '数组'],
+            ['algorithm04', '队列和栈'],
+            ['algorithm05', '字符串']
           ]
         },
       ],
@@ -105,6 +115,7 @@ module.exports = {
             "",
             ['code01', '手写代码-基础篇'],
             ['code02', '手写代码-函数篇'],
+            ['code03', '手写代码-promise'],
           ]
         },
       ],
@@ -135,10 +146,13 @@ module.exports = {
           collapsable: false,
           children: [
             "",
-            ['js-time01', 'JavaScript异步'],
+            ['js-time01', '异步'],
             ['design01', '设计模式'],
             ['animation01', '动画'],
             ['draw01', '绘图'],
+            ['request01', '请求'],
+            ['this01', 'this'],
+            ['type01', '类型转换'],
           ]
         },
       ],

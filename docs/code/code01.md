@@ -26,11 +26,11 @@ function myBind (context, ...args) {
     const fn = this
     const bindFn = function (...newArgs) {
         return fn.call(
-        	this.instanceof bindFn ? this : context,
+        	this instanceof bindFn ? this : context,
             ...args,...newArgs
         )
     }
-    bindFn.prototypr = Objecy.create(fn.prototype)
+    bindFn.prototype = Object.create(fn.prototype)
     return bindFn
 }
 ```
