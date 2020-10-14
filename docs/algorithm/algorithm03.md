@@ -2,11 +2,86 @@
 
 
 
+## 遍历
+
+for：
+
+* for循环不到数组的私有属性
+* 可以使用return/break/continue终止结束循环
+* for属于编程式写法
+
+forEach：
+
+* forEach循环不到数组的私有属性
+* return/break/continue不起作用
+* forEach属于声明式写法，不关心具体实现
+
+for in：
+
+* 可以遍历到数组私有属性的值
+* key的类型是string型
+* 可以使用return/break/continue终止结束循环
+* 循环顺序不一定按照数组索引值来循环
+
+for of：
+
+* 不可以遍历数组的私有属性的值
+* val的值就是arr项的值
+* 可以使用return/break/continue结束终止循环
+
+filter：
+
+* 不操作原数组
+* 回调函数中是true的话把这一项放到新数组中
+* 返回过滤后的新数组
+
+map：
+
+* 不操作原数组
+* 回调函数中返回什么就是什么
+* 返回新数组
+
+some：
+
+* 只要有一项符合就返回true，否则返回false
+
+every：
+
+* 只要有一项false就返回false，否则返回true
+
+reduce：
+
+* 不改变原数组
+* 求数组的累加和
+
+
+
 ## 排序
 
 
 
 ## 扁平化
+
+
+
+### 数组自带的flat方法
+
+```javascript
+// 参数是指深度，该方法会移除数组的空项
+arr.flat(Infinity)
+```
+
+
+
+
+
+### 正则
+
+```javascript
+let ary = [1, [2, [3, [4, 5]]], 6];
+let str = JSON.stringify(ary);
+ary = str.replace(/(\[|\])/g, '');
+```
 
 
 

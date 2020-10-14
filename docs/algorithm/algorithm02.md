@@ -161,20 +161,3 @@ const hasCycle = (head) => {
 
 
 
-获取url参数
-
-1. 指定参数名称，返回该参数的值，或者空字符串
-2. 不指定参数名称，返回全部的参数对象 或者 {}\
-3. 如果存在多个同名参数，则返回数组
-
-```javascript
-function getUrlParam (url, key) {
-    var arr = {}
-    url.replace(/\??(\w+)=(\w+)&?)/g, function(match, matchKey, matchValue) {
-        
-    }
-}
-```
-
-
-

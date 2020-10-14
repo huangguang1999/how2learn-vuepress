@@ -73,14 +73,14 @@ function Stack() {
 }
 ```
 
-<br>
+
 
 
 ## 队列
 
 数组的push和shift方法实现
 
-<br>
+
 
 ## 链表
 
@@ -96,7 +96,7 @@ function Stack() {
 
 重点是**定位目标节点的前驱节点**
 
-<br>
+
 
 ## 树
 
@@ -122,7 +122,7 @@ function treeNode (val) {
 
 `const node = new TreeNode(1)`
 
-<br>
+
 
 下图的数据结构即符合物理逻辑，又符合思维逻辑，推荐（修言大佬小册的）
 

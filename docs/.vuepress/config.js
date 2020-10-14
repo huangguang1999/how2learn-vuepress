@@ -137,6 +137,7 @@ module.exports = {
             ['source01', 'JS代码执行过程'],
             ['secure01', 'XSS/CSRF'],
             ['sort01', 'V8排序'],
+            ['ram01', 'js内存模型'],
           ]
         },
       ],
@@ -149,6 +150,7 @@ module.exports = {
             ['js-time01', '异步'],
             ['design01', '设计模式'],
             ['animation01', '动画'],
+            ['animation02', 'Vue动画'],
             ['draw01', '绘图'],
             ['request01', '请求'],
             ['this01', 'this'],

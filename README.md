@@ -29,7 +29,9 @@ $ npm run build
 
 * 专业书籍：【JavaScript高级程序设计】【你不知道的JavaScript(上中下)】【JavaScript权威指南】
 * [掘金](https://juejin.im/)
-* [极客时间](https://time.geekbang.org/)
+* [极客时间](https://time.geekbang.org/)、[慕课网](https://www.imooc.com/)
 * [谷歌开发者文档](https://developers.google.com/china?hl=zh-cn)
 * 大佬博客（如冴羽、神三元、张鑫旭等）
-* GitHub上项目（扩展技术广度）
+* GitHub上项目（扩展技术广度；每一个优秀的开源项目都是老师；）
+* [哔哩哔哩](https://www.bilibili.com/)（众所周知B站是一个学习的网站）
+
